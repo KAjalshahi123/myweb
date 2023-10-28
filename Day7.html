@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> This is my web</title>
+    </head>
+    <body>
+        <h2>  javascript AddEventListner </h2>
+        
+        <!--
+            <h4 onclick = "this.innerHTML = 'oops !'"> click on this text</h4>
+            <h4 onclick = "changeText(this)"> click on this text!</h4> -->
+            <p1> click the button and display the date</p1>
+            <button  id = "mybtn">click me...!</button>
+            <p id = "demo"></p>
+<script>
+document.getElementById("mybtn").addEventListener("click",displayDate());
+
+function displayDate(){
+        document.getElementById("demo").innerHTML = Date();
+    }
+</script>
+<p id = "demo"></p>
+       
+    </body>
+</html>
